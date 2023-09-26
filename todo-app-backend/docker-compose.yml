@@ -1,0 +1,20 @@
+version: "3.8"
+services:
+  
+    
+  todo-app-task:
+    build: ./
+
+    ports:
+      - '3500:3500'
+    volumes:
+      - tododb:/app/db
+    env_file:
+      - ./.env  
+     
+
+volumes:
+  tododb:
+    
+
+

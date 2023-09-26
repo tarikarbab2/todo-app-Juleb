@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  
+    
+  todo-app-task:
+    image: 'tarikarbab/todo-app-task:latest'
+
+    ports:
+      - '3500:3500'
+    volumes:
+      - tododb:/app/db
+    env_file:
+      - ./todo-app-backend/.env  
+     
+
+volumes:
+  tododb:
