@@ -1,0 +1,31 @@
+.todo{
+
+    &__card{
+        width: 100%;
+       
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__right{
+        align-self: flex-end;
+    }
+    &__left{
+        display: flex;
+        align-items: center;
+
+    }
+    &__name{
+       font-size: 1rem;
+        margin: 0;
+        margin-left:1rem;
+        
+    }
+    &__completed{
+        opacity: 0.4;
+        text-decoration: line-through;
+    }
+    &__check{
+        width:3rem;
+    }
+}
